@@ -1,0 +1,30 @@
+; FORMATTING OF THE REGPATHS FILE:
+; 1 The format for exporting a hive/key is:
+; 1 h,#HIVEPATH#
+; 1 example:
+; 1 h,HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\SubSystems
+; 2 The format for exporting a value is:
+; 2 v,#HIVEPATH#,#VALUENAME#
+; 2 example:
+; 2 v,HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\SubSystems,Windows
+
+; 3 No input will result in an error.
+
+; 4 You can exclude keys and values by putting a ";" in the beginning of the line.
+
+; 5 You can serarate registry entry bulks by a line space (for esthestical reasons):
+; 5 example:
+; 5 v,HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\SubSystems,Windows
+; 5 v,HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\SubSystems,Debug
+; 5 #LINE SPACE#
+; 5 h,HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\usefulapps\ControllerGPRS
+
+; **************************************** HIVES *****************************************
+h,HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\usefulapps\ControllerGPRS
+
+; **************************************** VALUES ****************************************
+v,HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\SubSystems,Windows
+
+;NOT YET IMPLEMENTED
+; **************************************** EXCLUDE ***************************************
+;x,HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\usefulapps\ControllerGPRS.*,loginUser*Name

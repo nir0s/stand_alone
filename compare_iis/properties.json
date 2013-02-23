@@ -1,0 +1,42 @@
+{
+	"paths" : {
+		"web_deploy"    : "\"c:/Program Files/IIS/Microsoft Web Deploy V2/msdeploy\"",
+		"root" 			: "c$/data/sites",
+		"conf_file"		: "L:/Scripts/compare_iis/%s vs %s - conf_compare.log"
+	},
+	"iis_servers" : {
+		"qa" : {
+			"qa-iis1"	: "172.16.21.241"
+		},
+		"dev" : {
+			"dev-iis1"	: "172.16.21.193"
+		},
+		"prod" : {
+			"iis1"		: "172.16.0.11",
+			"iis2"		: "172.16.0.12",
+			"iis3"		: "172.16.0.13",
+			"iis4"		: "172.16.0.14",
+			"iis5"		: "172.16.0.15"
+		}
+	},
+	"site_dirs" : {
+		"android-xml"		: "android-xml",
+		"apps"				: "apps/skypePTTDB/template",
+		"apps2"				: "apps2/appsDB/template",
+		"clients"			: "clients/skypePTTDB/template",
+		"contacts"			: "contacts/template",
+		"contacts2"			: "contacts2/template",
+		"fum"				: "fum/template",
+		"fum2"				: "fum2/template",
+		"mux2"				: "mux2/template",
+		"nms_logger"		: "nms_logger/nmsreport/template",
+		"online-services"	: "online-services/template"
+	},
+	"msgs" : {
+		"diff_found"	: "%s: site Comparison FOUND DIFFERENCES: %s",
+		"ok"			: "%s: site Comparison OK",
+		"only_in"		: "%s: files (or folders) only in %s - %s",
+		"comp_failed"	: "%s: files which could not be compared - %s",
+		"dir_not_exist" : "directory %s does not exist"
+	}
+}

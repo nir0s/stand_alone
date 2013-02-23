@@ -1,0 +1,27 @@
+;The first line of the section will begin by defining the basic settings with a colon prefix
+;The next lines - up until the next colon prefix - will be used to define each dns entry
+;A line will be ignored if it has a semicolon prefix or a linespacing
+;format should be as follows:
+;
+;:iis_srv_src,iis_srv_dst
+;iis_site_id,iis_site_name,iis_site_port
+;
+;example:
+;:qaiis1-srv,qaiis2-srv
+;2044922476,encrypt,88
+;
+;********************************************************************************************
+:localhost,172.16.21.242
+1043305269,android-xml,111
+127358416,anti-fraud,97
+67793809,apps,81
+505476595,apps2,71
+468726519,clients,80
+349690056,contacts,87
+1147381916,contacts2,73
+917845398,fis_3,85
+783861902,fum,110
+175733830,fum2,72
+590821483,mux2,104
+2106585654,nms_logger,78
+388058727,online-services,74
